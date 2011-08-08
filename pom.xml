@@ -1,0 +1,87 @@
+<!-- Copyright (c) 2010 Sonatype, Inc. All rights reserved. This program and the accompanying materials are made available under the terms of 
+  the Eclipse Public License v1.0 which accompanies this distribution, and is available at http://www.eclipse.org/legal/epl-v10.html -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.eclipse.tesla</groupId>
+    <artifactId>tesla</artifactId>
+    <version>1</version>
+  </parent>
+  <groupId>org.eclipse.tesla.plugin</groupId>
+  <artifactId>tesla-plugin</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <properties>
+    <mavenVersion>3.0.3</mavenVersion>
+  </properties>
+
+  <repositories>
+    <repository>
+      <id>tesla.releases</id>
+      <url>http://jvz.io:8081/nexus/content/repositories/releases/</url>
+    </repository>
+  </repositories>
+  
+  <scm>
+    <connection>scm:git:git@github.com/etesla/tesla-plugin-api.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/etesla/tesla-plugin-api.git</developerConnection>
+    <url>http://github.com/etesla/tesla-plugin-api</url>
+  </scm>
+      
+  <modules>
+    <module>tesla-plugin-api</module>
+    <module>tesla-plugin-plugin</module>
+    <module>tesla-plugin-tools-api</module>
+    <!--
+    <module>tesla-plugin-tools-java5</module>
+    -->
+    <!--
+    <module>tesla-simple-plugin</module>
+    -->
+  </modules>
+
+  <dependencyManagement>
+    <dependencies>
+      <!-- maven -->
+      <dependency>
+        <groupId>org.apache.maven</groupId>
+        <artifactId>maven-core</artifactId>
+        <version>${mavenVersion}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.maven</groupId>
+        <artifactId>maven-model</artifactId>
+        <version>${mavenVersion}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.maven</groupId>
+        <artifactId>maven-plugin-api</artifactId>
+        <version>${mavenVersion}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.maven</groupId>
+        <artifactId>maven-artifact</artifactId>
+        <version>${mavenVersion}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.eclipse.tesla.plugin</groupId>
+        <artifactId>tesla-plugin-tools-api</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+        <groupId>org.codehaus.plexus</groupId>
+        <artifactId>plexus-utils</artifactId>
+        <version>2.0.7</version>
+      </dependency>
+      <dependency>
+        <groupId>org.codehaus.plexus</groupId>
+        <artifactId>plexus-container-default</artifactId>
+        <version>1.5.5</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+</project>
