@@ -16,13 +16,6 @@
   <properties>
     <mavenVersion>3.0.3</mavenVersion>
   </properties>
-
-  <repositories>
-    <repository>
-      <id>tesla.releases</id>
-      <url>http://jvz.io:8081/nexus/content/repositories/releases/</url>
-    </repository>
-  </repositories>
   
   <scm>
     <connection>scm:git:git@github.com/etesla/tesla-plugin-api.git</connection>
