@@ -27,6 +27,7 @@
     <artifactId>tesla-plugin</artifactId>
     <version>0.0.3-SNAPSHOT</version>   
   </parent>
+
   <artifactId>tesla-plugin-tools-api</artifactId>
 
   <name>Tesla Plugin Tools APIs</name>
@@ -37,7 +38,6 @@
     <dependency>
       <groupId>org.eclipse.tesla.plugin</groupId>
       <artifactId>tesla-plugin-api</artifactId>
-      <version>0.0.3-SNAPSHOT</version>
     </dependency>  
   
     <dependency>
