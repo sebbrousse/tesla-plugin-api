@@ -58,7 +58,7 @@
 
   <properties>
     <mavenVersion>2.0.6</mavenVersion>
-    <pluginToolsVersion>2.7-SNAPSHOT</pluginToolsVersion>
+    <pluginToolsVersion>2.9</pluginToolsVersion>
   </properties>
 
   <!-- Copy from project up -->
