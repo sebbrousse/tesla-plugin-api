@@ -10,7 +10,7 @@
     <version>4</version>
   </parent>
 
-  <groupId>org.eclipse.tesla.plugin</groupId>
+  <groupId>io.tesla.plugin</groupId>
   <artifactId>tesla-plugin</artifactId>
   <version>0.0.3-SNAPSHOT</version>
   <packaging>pom</packaging>
@@ -62,12 +62,12 @@
       </dependency>
 
       <dependency>
-        <groupId>org.eclipse.tesla.plugin</groupId>
+        <groupId>io.tesla.plugin</groupId>
         <artifactId>tesla-plugin-tools-api</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.eclipse.tesla.plugin</groupId>
+        <groupId>io.tesla.plugin</groupId>
         <artifactId>tesla-plugin-api</artifactId>
         <version>${project.version}</version>
       </dependency>
